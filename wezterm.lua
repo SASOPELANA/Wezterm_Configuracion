@@ -41,6 +41,16 @@ config.launch_menu = {
 		label = "Ubuntu Terminal",
 		args = { "/bin/zsh" }, -- O "/bin/zsh" si usas zsh como shell
 	},
+	{
+		-- Comando para abrir el terminal en Debian
+		-- label = "Debian Terminal",
+		-- args = { "/bin/zsh" }, -- O "/bin/zsh" si usas zsh como shell en Debian
+	},
+	{
+		-- Comando para abrir el terminal en Fedora
+		-- label = "Fedora Terminal",
+		-- args = { "/bin/zsh" }, -- O "/bin/zsh" si usas zsh como shell en Fedora
+	},
 }
 
 -- Devuelve la tabla de configuración
