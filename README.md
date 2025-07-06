@@ -1,1 +1,1 @@
-# Wezterm_Configuracion
+# Terminales Configuracion
