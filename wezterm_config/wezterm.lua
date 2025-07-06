@@ -11,7 +11,7 @@ config.window_background_opacity = 0.90
 config.font_size = 9
 
 -- Configura el esquema de colores
-config.color_scheme =  'Catppuccin Mocha'
+config.color_scheme = "Catppuccin Mocha"
 
 -- Configura la fuente
 config.font = wezterm.font("JetBrainsMono Nerd Font", { weight = "Bold", italic = true })
@@ -50,8 +50,12 @@ config.launch_menu = {
 		label = "PowerShell",
 		args = { "pwsh.exe" },
 	},
+	{
+		-- Comando para abrir el terminal distrol linux con zsh
+		label = "Distro Terminal",
+		args = { "/bin/zsh" }, -- O "/bin/zsh" si usas zsh como shell
+	},
 }
-
 
 -- Atajos para dividir pantalla
 config.keys = {
