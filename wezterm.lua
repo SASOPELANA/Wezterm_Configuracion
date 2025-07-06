@@ -26,7 +26,7 @@ config.cursor_blink_ease_in = "Constant"
 config.cursor_blink_ease_out = "Constant"
 
 -- Configuración de la barra de estado
-config.enable_tab_bar = true
+config.enable_tab_bar = false
 config.hide_tab_bar_if_only_one_tab = false
 config.use_fancy_tab_bar = true
 config.tab_max_width = 25
@@ -49,6 +49,21 @@ config.launch_menu = {
 		-- Comando para PowerShell
 		label = "PowerShell",
 		args = { "pwsh.exe" },
+	},
+}
+
+
+-- Atajos para dividir pantalla
+config.keys = {
+	{
+		key = "h",
+		mods = "CTRL|ALT",
+		action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
+	},
+	{
+		key = "v",
+		mods = "CTRL|ALT",
+		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
 	},
 }
 
