@@ -53,5 +53,19 @@ config.launch_menu = {
 	},
 }
 
+-- Atajos para dividir pantalla
+config.keys = {
+	{
+		key = "h",
+		mods = "CTRL|ALT",
+		action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
+	},
+	{
+		key = "v",
+		mods = "CTRL|ALT",
+		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
+	},
+}
+
 -- Devuelve la tabla de configuración
 return config
